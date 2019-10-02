@@ -30,7 +30,7 @@
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<a href="index.html"><img src="{{URL::to('/assets/img/logo-dark.png')}}" alt="Klorofil Logo" class="img-responsive logo"></a>
+				<a href="index.html"><img src="{{URL::to('/assets/img/logoBlack2.png')}}" alt="Klorofil Logo" class="img-responsive logo"></a>
 			</div>
 			<div class="container-fluid">
 				<div class="navbar-btn">
@@ -78,20 +78,12 @@
 		<div id="sidebar-nav" class="sidebar">
 			<div class="sidebar-scroll">
 				<nav>
-					<ul class="nav">
-						<li><a href="{{URL('/Admin/Dashboard')}}" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
-						<li><a href="{{URL('/Admin/Item')}}" class=""><i class="lnr lnr-smartphone"></i> <span>Item</span></a></li>
+					<ul class="nav" style="margin-top: 30px;">
+						<li><a href="{{URL('/admin')}}" class=""><i class="lnr lnr-home"></i> <span>Dashboard</span></a></li>
+						<li><a href="{{URL('/admin/addData')}}" class=""><i class="lnr lnr-smartphone"></i> <span>Add Places</span></a></li>
+						<li><a href="{{('/admin/dataOrder')}}" class=""><i class="lnr lnr-smartphone"></i> <span>Data Order</span></a></li>
 						{{-- <li style="cursor: pointer;"><a id="itemside" onclick="loadContent('/Admin/Item')" class=""><i class="lnr lnr-smartphone"></i> <span>Item</span></a></li> --}}
-						<li>
-							<a href="#subPages" data-toggle="collapse" class="collapsed"><i class="lnr lnr-list"></i> <span>Category</span> <i class="icon-submenu lnr lnr-chevron-left"></i></a>
-							<div id="subPages" class="collapse ">
-								<ul class="nav">
-									<li><a href="{{URL('/Admin/Color')}}" class="">Color</a></li>
-									<li><a href="{{URL('/Admin/Mark')}}" class="">Mark</a></li>
-								</ul>
-							</div>
-						</li>
-						<li><a href="panels.html" class=""><i class="lnr lnr-history"></i> <span>History</span></a></li>
+								
 					</ul>
 				</nav>
 			</div>

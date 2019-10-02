@@ -1,4 +1,4 @@
-@include('layout/side-menu')
+@include('layout/sideMenuAdmin')
 <div id="fh5co-main">
     <div class="fh5co-narrow-content">
         <h3>DATA ORDER</h3>
@@ -26,3 +26,4 @@
             </table>
         </div>
     </div>
+    @include('layout/footerAdmin')

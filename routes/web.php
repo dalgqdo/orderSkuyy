@@ -12,8 +12,15 @@
 */
 
 Route::get('/', function () {
-    return view('auth/loginAdmin');
+    return view('user/dashboard');
 });
 
-Route::get('login','Auth@login');
+Route::get('/loginAdmin','authController@index');
+Route::post('/login/proccess','authController@login');
+
+Route::get('/admin','AdminController@index');
+Route::get('/admin/dataOrder', 'AdminController@dataOrder');
+Route::get('/admin/addData', 'AdminController@addData');
+Route::get('/admin/logout', 'AdminController@logout');
+
 
